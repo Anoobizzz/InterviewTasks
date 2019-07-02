@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:~/mintos-task-db
+    driverClassName: org.h2.Driver
+    username: admin
+    password: password
+  database-platform: org.hibernate.dialect.H2Dialect
+  h2.console:
+    enabled: true
+    path: /h2-console
+  jpa.hibernate.ddl-auto: update
+
+geo.api.url: https://ipapi.co/{ip}/json/
+weather.api.url: https://api.openweathermap.org/data/2.5/weather?units=metric&APPID=19a98e0255a4f03db5a346b2f99f37fa&lat={latitude}&lon={longitude}
+
+weather.cache.eviction.time: 3600
+geolocation.cache.eviction.time: 86400

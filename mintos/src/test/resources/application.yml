@@ -1,0 +1,5 @@
+geo.api.url: https://test.com/{ip}/json/
+weather.api.url: https://test.com/weather?units=metric&APPID=123&lat={latitude}&lon={longitude}
+
+weather.cache.eviction.time: 10
+geolocation.cache.eviction.time: 10
